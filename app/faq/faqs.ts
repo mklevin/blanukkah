@@ -33,6 +33,11 @@ export const faqs = [
         `My initial reaction was: "How would that even work?" There was no second reaction because I immediately had fifty incredibly dumb ideas. 
         And so, here we are.`]
     }, {
+      question: "So we're voting on whether or not you should get socks?",
+      answer: [`No, you're making my mom happy by contributing to a storied and frankly bizarre Hanukkah tradition.`,
+        `Okay, yes, <i>and</i> voting on whether or not I should get socks. It can be two things!`
+      ]
+    }, {
       question: "How long did this take to make?",
       answer: ["Don't worry about it! (Like a week. It really wasn't that bad.)"]
     }, {
@@ -48,8 +53,8 @@ export const faqs = [
         + "quickly, but much like everything about this, it's all vibes."
       ]
     }, {
-      question: "How dare you put [state] in [region]! It clearly belongs in [other region]!",
-      answer: [`The regions on this site are actually the official national <a href="https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States" target="_blank">census-designated regions</a>.
+      question: "How dare you put my state in [region]! It clearly belongs in [other region]!",
+      answer: [`The regions on this site are actually the <a href="https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States" target="_blank">official national census-designated regions</a>.
         If you disagree with them, reach out to your local U.S. Census Bureau office to lodge a complaint.`]
     }
 ];
