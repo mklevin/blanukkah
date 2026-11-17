@@ -9,8 +9,8 @@ export const updates = [
     text: "I just don't think that trees would be quite so choppable if man was meant to reduce, reuse, or recycle.",
     author: Zoro
   }, {
-    text: `The cup's got my vote - it's been on my porch with me for every tornado for the last
-    15 years and my house hasn't blown down yet.`,
+    text: `The cup's got my vote - we've had many a debate while tornado-spotting from my porch and
+    its arguments have always held water.`,
     author: Brie
   }
 ];
