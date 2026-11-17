@@ -2,9 +2,9 @@ import { Colby } from "../../data/authors";
 
 export const updates = [
   {
-    text: "I have so many words to say about this race, enough to make the text take up "
-        + "two, nay even three lines. So many words that they're going to attempt to "
-        + "encroach on the map's space, but if we've done everything right it'll be fine!"
+    text: `This election cycle is a crucial one for Blexassippi. Has Georgia really become an Adrian
+    Tchaikovsky stronghold, or was the last election cycle a fluke? Will V.E. Schwab manage to crack
+    the Waffle House demographic? You know the saying: so goes North Carolina, so goes the Hanukkah list.`
   }, {
     text: "This is a second message!",
     author: Colby

@@ -1,7 +1,3 @@
-const What = {
-  
-}
-
 export const faqs = [
     {
         question: "What is this?",
@@ -48,13 +44,22 @@ export const faqs = [
       answer: [`Pretty much every time you refresh the page! The \"database\" for all of this is literally just 
         a Google Sheet.`]
     }, {
+      question: "It looks like I can vote multiple times. Is that on purpose?",
+      answer: [`Yep! If you want to stuff the ballot, be my guest. I'm an FAQ page, not a cop.`]
+    }, {
       question: "How long will it take me to get my \"I Voted!\" stickers?",
       answer: ["No clue! It could be next week, it could be next year. I'll do my best to get them to you "
         + "quickly, but much like everything about this, it's all vibes."
       ]
     }, {
+      question: "That's not how a menorah works! You don't even know Hanukkah!",
+      answer: [`First of all, it's a <i>hanukkiah</i>. Second, it's called <i>creative license</i>.`,
+        `Little-known fact: once you hit 108 lifetime Hanukkah candles lit they give you a license to light it in whatever order you want 
+        (as long as you start with the <i>shamash</i>, obviously).`
+      ]
+    }, {
       question: "How dare you put my state in [region]! It clearly belongs in [other region]!",
       answer: [`The regions on this site are actually the <a href="https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States" target="_blank">official national census-designated regions</a>.
-        If you disagree with them, reach out to your local U.S. Census Bureau office to lodge a complaint.`]
+        If you disagree with them, reach out to your local U.S. Census Bureau office to lodge a complaint.`,]
     }
 ];

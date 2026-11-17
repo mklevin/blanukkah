@@ -1,12 +1,17 @@
-import { Colby } from "../../data/authors";
+import { KitKat, Zoidberg } from "../../data/authors";
 
 export const updates = [
   {
-    text: "I have so many words to say about this race, enough to make the text take up "
-        + "two, nay even three lines. So many words that they're going to attempt to "
-        + "encroach on the map's space, but if we've done everything right it'll be fine!"
+    text: `It's perhaps no surprise that our nation's frontier would turn out the most progressive
+    Senate candidates of the entire cycle. The Rockies have historically been a bastion of Donkey Kong
+    support, but polls indicate that Zelda has built a broad coalition across the entire Blacific Northwest. 
+    The question is: is California ready to switch too?`
   }, {
-    text: "This is a second message!",
-    author: Colby
+    text: `I really enjoyed the Ocarina of Time remake, but I'm a bit disappointed that they cut
+      the level where Link goes to a measles party.`,
+    author: Zoidberg
+  }, {
+    text: `Donkey Kong is living proof that the regulatory state is the only thing standing between us and a free-market utopia.`,
+    author: KitKat
   }
 ];

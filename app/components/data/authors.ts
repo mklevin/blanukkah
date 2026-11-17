@@ -48,4 +48,11 @@ export const Zoidberg: Author = {
   credit: "Emily Cooper"
 }
 
-export const AllAuthors = [Brie, Circe, Colby, KitKat, Pasta, Zoidberg];
+export const Zoro: Author = {
+  name: "Zoro",
+  jobTitle: "The Embodiment of Greed",
+  image: publicPath("/images/authors/zoro.jpeg"),
+  credit: "Tiana and Giancarlo"
+}
+
+export const AllAuthors = [Brie, Circe, Colby, KitKat, Pasta, Zoidberg, Zoro];

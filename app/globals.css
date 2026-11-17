@@ -431,6 +431,7 @@ p {
 }
 
 .faq__answer p {
+    max-width: 46em;
     margin-top: 0.5em;
     font-family: "PT Serif", serif;
     font-size: 1em;
@@ -478,9 +479,9 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 48px 32px;
+  gap: 28px 32px;
   margin: 48px auto 0;
-  max-width: 976px;;
+  max-width: 976px;
 }
 
 .credits-author {
@@ -494,9 +495,9 @@ p {
 
 .credits-author-image {
   display: block;
-  width: 192px;
-  height: 192px;
-  min-width: 192px;
+  width: 170px;
+  height: 170px;
+  min-width: 170px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center;
@@ -525,5 +526,9 @@ p {
 
 .credits-author-credit {
   margin-top: 2px;
-  font-size: 16px;
+  font-size: 15px;
+}
+
+.credits .subtext {
+    font-size: 1.2em;
 }

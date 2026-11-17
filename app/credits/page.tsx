@@ -2,7 +2,7 @@ import { AllAuthors } from "@/app/components/data/authors";
 
 export default function Page() {
   return (
-    <>
+    <div className="credits">
       <h1>Credits</h1>
 
       <div className="subtext">
@@ -36,6 +36,6 @@ export default function Page() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
