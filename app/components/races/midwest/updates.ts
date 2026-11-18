@@ -1,4 +1,4 @@
-import { Brie, Zoro } from "../../data/authors";
+import { Brie, Molly } from "../../data/authors";
 
 export const updates = [
   {
@@ -7,7 +7,7 @@ export const updates = [
     controls the weather? It's these questions and more that voters must answer this election season.`
   }, {
     text: "I just don't think that trees would be quite so choppable if man was meant to reduce, reuse, or recycle.",
-    author: Zoro
+    author: Molly
   }, {
     text: `The cup's got my vote - we've had many a debate while tornado-spotting from my porch and
     its arguments have always held water.`,

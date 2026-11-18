@@ -1,4 +1,4 @@
-import { Colby, Pasta } from "../../data/authors";
+import { Circe, Pasta } from "../../data/authors";
 
 export const updates = [
   {
@@ -7,7 +7,7 @@ export const updates = [
     in central Pennsylvania must choose between Wawa and Sheetz, so must voters choose between their two Senate candidates.`
   }, {
     text: "How did both of our candidates end up being books? We can't even read.",
-    author: Colby
+    author: Circe
   }, {
     text: "There are only three sure things in life: death, taxes, and a 400+ page book for a senator.",
     author: Pasta
