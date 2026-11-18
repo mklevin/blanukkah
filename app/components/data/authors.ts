@@ -27,11 +27,25 @@ export const Colby: Author = {
   credit: "Charlotte Wright"
 }
 
+export const Fabio: Author = {
+  name: "Mr. Fabio Fabfabs",
+  jobTitle: "Peacemaker",
+  image: publicPath("/images/authors/fabio.jpg"),
+  credit: "Emily Crossette"
+}
+
 export const KitKat: Author = {
   name: "KitKat",
   jobTitle: "Pretty Privilege Exemplar",
   image: publicPath("/images/authors/kitkat.jpg"),
   credit: "Andrew Truong"
+}
+
+export const Molly: Author = {
+  name: "Molly",
+  jobTitle: "Instigator",
+  image: publicPath("/images/authors/molly.jpg"),
+  credit: "Emily Crossette"
 }
 
 export const Pasta: Author = {
@@ -55,4 +69,4 @@ export const Zoro: Author = {
   credit: "Tiana and Giancarlo"
 }
 
-export const AllAuthors = [Brie, Circe, Colby, KitKat, Pasta, Zoidberg, Zoro];
+export const AllAuthors = [Brie, Circe, Colby, Fabio, KitKat, Molly, Pasta, Zoidberg, Zoro];

@@ -29,9 +29,9 @@ export const faqs = [
         `My initial reaction was: "How would that even work?" There was no second reaction because I immediately had fifty incredibly dumb ideas. 
         And so, here we are.`]
     }, {
-      question: "So we're voting on whether or not you should get socks?",
+      question: "So we're voting on which sweater you should ask your mom for?",
       answer: [`No, you're making my mom happy by contributing to a storied and frankly bizarre Hanukkah tradition.`,
-        `Okay, yes, <i>and</i> voting on whether or not I should get socks. It can be two things!`
+        `Okay, yes, <i>and</i> voting on which sweater I should ask my mom for. It can be two things!`
       ]
     }, {
       question: "How long did this take to make?",
@@ -52,9 +52,12 @@ export const faqs = [
         + "quickly, but much like everything about this, it's all vibes."
       ]
     }, {
+      question: "Why \"Meneedle\"?",
+      answer: ["It's just menorah + needle. It was created in a lab to cause you <a href=\"https://www.elle.com/culture/career-politics/a24747167/new-york-times-election-needle-stress/\" target=\"_blank\">almost as much stress as its inspiration</a>."]
+    }, {
       question: "That's not how a menorah works! You don't even know Hanukkah!",
-      answer: [`First of all, it's a <i>hanukkiah</i>. Second, it's called <i>creative license</i>.`,
-        `Little-known fact: once you hit 108 lifetime Hanukkah candles lit they give you a license to light it in whatever order you want 
+      answer: [`First of all, it's a <i>hanukkiah</i>.`,
+        `Second, it's called creative license. Little-known fact: once you hit 108 lifetime Hanukkah candles lit they give you a license to light it in whatever order you want 
         (as long as you start with the <i>shamash</i>, obviously).`
       ]
     }, {

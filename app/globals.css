@@ -125,6 +125,11 @@ p {
     margin-bottom: 0.5em;
 }
 
+.subtext .trademark {
+    font-size: 0.6em;
+    vertical-align: super;
+}
+
 .navigation-sentinel {
     height: 1px;
     margin-bottom: -1px;
@@ -235,6 +240,10 @@ p {
 .senatorials {
     border-top: 1px solid var(--subdivider-color);
     padding-top: 0.8em;
+}
+
+.senatorials .subtext {
+    font-size: 1.15em;
 }
 
 .senatorials p {

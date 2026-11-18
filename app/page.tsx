@@ -12,7 +12,7 @@ export default function Home() {
       <div id="presidential">
         <LiveIndicator />
         <h1>Hanukkah List Presidential Election</h1>
-        <div className="subtext">Something about this map.</div>
+        <div className="subtext">The 2026 election continues to be hotly contested. Use the Meneedle<span className="trademark">®</span> to keep tabs on the vote, or use the map below to dig into results by region.</div>
 
         <VoteShareMenorah />
 
@@ -23,6 +23,9 @@ export default function Home() {
 
       <div className="senatorials">
         <h2>Senate elections</h2>
+        <div className="subtext">Each major American geographic region has, by sheer coincidence, a crucial Hanukkah list Senate race this year.
+          Use the election trackers below to keep tabs on the races that matter to you, or tap the arrows to see what our expert political pundits have to say.
+        </div>
         <NortheastRace />
         <div className="subdivider" />
         <MidwestRace />

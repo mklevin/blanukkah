@@ -4,7 +4,7 @@ export const updates = [
   {
     text: `The Blue York region is known for many things: its dense cities, its lush foliage, its myriad names 
     for what is fundamentally a long sandwich with deli meats, cheeses and vegetables on it. But just as a driver
-    in central Pennsylvania must choose between Wawa and Sheetz, so must voters choose between two excellent Senate candidates.`
+    in central Pennsylvania must choose between Wawa and Sheetz, so must voters choose between their two Senate candidates.`
   }, {
     text: "How did both of our candidates end up being books? We can't even read.",
     author: Colby
