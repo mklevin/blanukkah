@@ -4,7 +4,7 @@ export const updates = [
   {
     text: `What qualifies someone to become a Blichigasian senator? Is it an unwavering good nature?
     A refusal to be daunted by an eight-hour drive? An unshakeable belief that the St. Louis arch
-    controls the weather? It's these questions and more that voters must answer this election season.`
+    controls the weather? Voters must answer these questions and more this election season.`
   }, {
     text: "I just don't think that trees would be quite so choppable if man was meant to reduce, reuse, or recycle.",
     author: Molly
