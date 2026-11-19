@@ -96,6 +96,7 @@ export default function Navigation() {
 
         <div className="nav-items flex">
           <NavLink href="/" text="Live Results" prefetch={false} />
+          <NavLink href="/candidates/" text="Candidates" />
           <NavLink href="/faq/" text="FAQ" />
           <NavLink href="/credits/" text="Credits" />
           <div className="vote-link">

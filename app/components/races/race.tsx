@@ -37,13 +37,13 @@ export default function Race({
         <LatestUpdates messages={messages} />
       </div>
 
+      <div className="plotset-container min-w-0">
+        <VoteShareGauge region={region} />
+      </div>
+
       <div className="datawrapper-container min-w-0">
         {spacer && <div className="map-spacer" />}
         {map}
-      </div>
-
-      <div className="plotset-container min-w-0">
-        <VoteShareGauge region={region} />
       </div>
     </div>
   );
