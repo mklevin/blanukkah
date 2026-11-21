@@ -2,7 +2,7 @@ import { Circe, Pasta } from "../../data/authors";
 
 export const updates = [
   {
-    text: `The Blue York region is known for many things: its dense cities, its lush foliage, its myriad names 
+    text: `The Blue York region is known for many things: its dense cities, its lush autumn foliage, its myriad names 
     for what is fundamentally a long sandwich with deli meats, cheeses and vegetables on it. But just as a driver
     in central Pennsylvania must choose between Wawa and Sheetz, so must voters choose between their two Senate candidates.`
   }, {

@@ -8,7 +8,7 @@ export default function SiteShell({
   children: ReactNode;
 }) {
   return (
-    <div className="page-container">
+    <main className="page-container" role="main">
       <header>
         <div className="title">
           <Link href="/" prefetch={false}>The Blue York Rhymes</Link>
@@ -27,6 +27,6 @@ export default function SiteShell({
           </a>
         </span>
       </footer>
-    </div>
+    </main>
   );
 }
