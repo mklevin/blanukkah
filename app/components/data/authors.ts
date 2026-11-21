@@ -22,7 +22,7 @@ export const Circe: Author = {
 
 export const Colby: Author = {
   name: "Colby Wright",
-  jobTitle: "Gravity Tester",
+  jobTitle: "Gravity Tester, Chief Political Correspondent",
   image: publicPath("/images/authors/colby.jpg"),
   credit: "Charlotte Wright"
 }
