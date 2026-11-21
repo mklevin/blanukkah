@@ -27,6 +27,13 @@ export const Colby: Author = {
   credit: "Charlotte Wright"
 }
 
+export const Daisy: Author = {
+  name: "Little Miss Daisy",
+  jobTitle: "Senior Wormy Analyst",
+  image: publicPath("/images/authors/daisy.jpg"),
+  credit: "Emma Posega Rappleye"
+}
+
 export const Fabio: Author = {
   name: "Mr. Fabio Fabfabs",
   jobTitle: "Peacemaker",
@@ -69,4 +76,6 @@ export const Zoro: Author = {
   credit: "Tiana and Giancarlo"
 }
 
-export const AllAuthors = [Brie, Circe, Colby, Fabio, KitKat, Molly, Pasta, Zoidberg, Zoro];
+export const AllAuthors = 
+  [Brie, Circe, Colby, Daisy, Fabio, KitKat, Molly, Pasta, Zoidberg, Zoro]
+  .sort((a, b) => a.name.localeCompare(b.name));

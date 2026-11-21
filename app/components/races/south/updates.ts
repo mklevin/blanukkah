@@ -7,10 +7,10 @@ export const updates = [
     the Waffle House demographic? You know the saying: so goes North Carolina, so goes the Hanukkah list.`,
     author: Colby
   }, {
-    text: "If the market forces that be demand more senators who are also books about sentient spiders, who am I to vote otherwise?",
+    text: "If the market forces that be demand more senators who are also books, who am I to vote otherwise?",
     author: Zoro
   }, {
-    text: "Pick another book about sentient spiders? Shiiiiit, <a href=\"https://youtu.be/Nga2Q207-58?si=4hnHQ9yLzzRX1rQT\" target=\"_blank\"?>I'd rather pick another senator instead</a>.",
+    text: "Pick another senator who's also a book? Shiiiiit, <a href=\"https://youtu.be/Nga2Q207-58?si=4hnHQ9yLzzRX1rQT\" target=\"_blank\"?>I'd rather pick another senator instead</a>.",
     author: Fabio
   }
 ];

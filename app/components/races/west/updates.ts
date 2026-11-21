@@ -1,4 +1,4 @@
-import { Colby, KitKat, Zoidberg } from "../../data/authors";
+import { Daisy, KitKat, Zoidberg } from "../../data/authors";
 
 export const updates = [
   {
@@ -6,7 +6,7 @@ export const updates = [
     Senate candidates of the entire cycle. The Rockies have historically been a bastion of Donkey Kong
     support, but polls indicate that Zelda has built a broad coalition across the entire Blacific Northwest. 
     The question is: is California ready to switch too?`,
-    author: Colby
+    author: Daisy
   }, {
     text: `I really enjoyed the Ocarina of Time remake, but I'm a bit disappointed that they cut
       the level where Link goes to a measles party.`,
