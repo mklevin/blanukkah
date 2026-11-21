@@ -65,9 +65,11 @@ export default function Page() {
       <h1>The Candidates</h1>
 
       <h2>Presidential</h2>
+      <div className="subtext">The entire country votes for a single President of the Hanukkah List, honoring a tradition going all the way back to George Washington's rabbi.</div>
       <Candidates candidates={presidential} />
 
       <h2>Senatorial</h2>
+      <div className="subtext">Each major geographic region in the country elects their own Hanukakh List senator, honoring a tradition going all the way back to this Hanukkah list.</div>
 
       <h3>Blue York (Northeast)</h3>
       <Candidates candidates={northeast} />
