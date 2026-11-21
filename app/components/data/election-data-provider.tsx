@@ -104,6 +104,7 @@ export function ElectionDataProvider({
         <div className="page-loading" role="alert">
           <p>Hanukkah is canceled :(</p>
           <p className="subtext">(there was a problem loading this page)</p>
+          <p>{error}</p>
           <button
             type="button"
             className="page-loading__retry"
