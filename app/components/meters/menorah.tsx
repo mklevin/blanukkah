@@ -306,6 +306,34 @@ export default function VoteShareMenorah() {
             active={isTossup}
           />
         </svg>
+
+        {/* Legend */}
+<div className="col-span-2 mt-2 w-full sm:col-span-3 sm:col-start-1">
+  <div
+    className="mx-auto w-full max-w-5xl"
+    style={{ fontFamily: '"Libre Franklin", sans-serif' }}
+  >
+    {/* Gradient scale */}
+    <div
+      className="h-2 w-full rounded-full"
+      style={{
+        background: `linear-gradient(
+          to right,
+          ${OPTION_A_COLOR},
+          ${TIE_COLOR} 50%,
+          ${OPTION_B_COLOR}
+        )`,
+      }}
+    />
+
+    {/* Labels */}
+            <div className="mt-1 flex items-center justify-between text-xs font-semibold">
+              <span style={{ color: OPTION_A_COLOR }}>Very Likely</span>
+              <span style={{ color: TIE_COLOR }}>Toss Up</span>
+              <span style={{ color: OPTION_B_COLOR }}>Very Likely</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
