@@ -18,7 +18,9 @@
     /* Map colors */
     --map-option-a: #4e79a7;
     --map-tie: #999999;
+    --map-tie-text: #666666;
     --map-option-b: #f28e2b;
+    --map-option-b-text: #d36a01;
 
     /* Map structure */
     --map-state-boundary: #ffffff;

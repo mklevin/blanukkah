@@ -1,14 +1,13 @@
 export const faqs = [
     {
         question: "What is this?",
-        answer: [`An election! Specifically for which items will go on the list 
-                of things I ask my mom to get me for Hanukkah this year. Please vote!`]
+        answer: [`An election! Specifically for which items will go on the Hanukkah wishlist I'll give to my mom this year. Please vote!`]
     }, {
         question: "Okay, but <i>why</i> is this?",
         answer: [
             "Because the world needs more whimsy?",
             `The real answer is that this is the latest entry in my mom and my yearly Hanukkah tradition: every year
-            she asks me for a list of things I want for Hanukkah (my protests that she doesn't have to get
+            she asks me for a Hanukkah wishlist (my protests that she doesn't have to get
             me anything were firmly shot down with "I'm your mother, I'm getting you Hanukkah gifts"), and 
             I oblige by giving her the most ridiculous thing I can think of that technically qualifies as a list.`, 
             `Past entries have included a formal business presentation, a marketing video, a Neocities-style website, a

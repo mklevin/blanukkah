@@ -20,8 +20,8 @@ const TOSSUP_MIN = 3 / 7;
 const TOSSUP_MAX = 4 / 7;
 
 const OPTION_A_COLOR = "var(--map-option-a, #4e79a7)";
-const OPTION_B_COLOR = "var(--map-option-b, #f28e2b)";
-const TIE_COLOR = "var(--map-tie, #999999)";
+const OPTION_B_COLOR = "var(--map-option-b-text, #d36a01)";
+const TIE_COLOR = "var(--map-tie, #666666)";
 
 const SEGMENTS = [
   { label: "VERY LIKELY", fill: "#d8e8f5", color: "#315b80" },
@@ -289,7 +289,7 @@ export default function VoteShareGauge({
         style={{
           marginTop: 6,
           textAlign: "center",
-          color: "var(--map-tooltip-muted, #777)",
+          color: "var(--subtitle-color, #2e2e2e)",
           fontSize: 12,
         }}
       >

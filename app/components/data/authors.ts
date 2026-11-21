@@ -9,21 +9,21 @@ export function publicPath(path: string) {
 export const Brie: Author = {
   name: "Brie Wright",
   jobTitle: "Part-Time Gamer",
-  image: publicPath("/images/authors/brie.jpeg"),
+  image: publicPath("/images/authors/brie.jpg"),
   credit: "Charlotte Wright"
 }
 
 export const Circe: Author = {
   name: "Circe the Witchy Girl",
   jobTitle: "Chief Food Officer",
-  image: publicPath("/images/authors/circe.jpeg"),
+  image: publicPath("/images/authors/circe.jpg"),
   credit: "Aimee Goldstein"
 }
 
 export const Colby: Author = {
   name: "Colby Wright",
   jobTitle: "Gravity Tester",
-  image: publicPath("/images/authors/colby.jpeg"),
+  image: publicPath("/images/authors/colby.jpg"),
   credit: "Charlotte Wright"
 }
 
@@ -51,7 +51,7 @@ export const Molly: Author = {
 export const Pasta: Author = {
   name: "Pasta",
   jobTitle: "Perpetually Baffled Glutton",
-  image: publicPath("/images/authors/pasta.jpeg"),
+  image: publicPath("/images/authors/pasta.jpg"),
   credit: "Snow"
 }
 
@@ -65,7 +65,7 @@ export const Zoidberg: Author = {
 export const Zoro: Author = {
   name: "Zoro",
   jobTitle: "The Embodiment of Greed",
-  image: publicPath("/images/authors/zoro.jpeg"),
+  image: publicPath("/images/authors/zoro.jpg"),
   credit: "Tiana and Giancarlo"
 }
 

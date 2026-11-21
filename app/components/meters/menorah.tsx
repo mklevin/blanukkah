@@ -204,7 +204,7 @@ export default function VoteShareMenorah() {
         <CandidateLabel
           name={optionBName}
           total={optionBTotal}
-          color={OPTION_B_COLOR}
+          color="var(--map-option-b-text)"
           align="right"
         />
       </div>
