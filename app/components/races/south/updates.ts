@@ -9,7 +9,7 @@ export const updates = [
     text: "If the market forces that be demand more senators who are also books about sentient spiders, who am I to vote otherwise?",
     author: Zoro
   }, {
-    text: "As a former senator myself, I can attest that North's latest work is the most qualified candidate south of the Shenandoah. ",
+    text: "Pick another book about sentient spiders? Shiiiiit, <a href=\"https://youtu.be/Nga2Q207-58?si=4hnHQ9yLzzRX1rQT\" target=\"_blank\"?>I'd rather pick another senator instead</a>.",
     author: Fabio
   }
 ];

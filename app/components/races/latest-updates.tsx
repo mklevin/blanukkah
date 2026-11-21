@@ -53,7 +53,7 @@ export default function LatestUpdates({
               )}
 
               
-              <p>{message.text}</p>
+              <p className="update-message" dangerouslySetInnerHTML={{ __html: message.text }} />
             </div>
           ))}
         </div>

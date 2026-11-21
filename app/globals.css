@@ -336,6 +336,15 @@ p {
   outline: none;
 }
 
+.update-message a {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+.update-message a:hover {
+    text-decoration: none;
+}
+
 .latest-updates-button {
   @apply flex h-8.5 w-8.5 cursor-pointer items-center justify-center
     rounded-full border border-gray-400 bg-transparent
