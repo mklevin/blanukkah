@@ -1,6 +1,7 @@
 export type Candidate = {
     name: string,
-    image: string
+    image: string,
+    description: string
 }
 
 export type CandidateProps = {
@@ -19,6 +20,10 @@ export default function Candidates({candidates}: CandidateProps) {
             />
 
             <span className="candidate-name" dangerouslySetInnerHTML={{ __html: candidate.name }}/>
+            {candidate.description !== "" 
+              ? <p dangerouslySetInnerHTML={{__html: candidate.description}} /> 
+              : ""
+            }
           </div>
         ))}
       </div>
