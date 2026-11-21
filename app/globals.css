@@ -216,10 +216,15 @@ p {
     font-weight: 600; 
     color: white;
     text-transform: uppercase;
+    -webkit-tap-highlight-color: transparent;
 
     @variant sm {
         padding: 1.2em;
     }
+}
+
+.navigation .vote-link a:active {
+    background-color: transparent;
 }
 
 .live-indicator {

@@ -12,7 +12,7 @@ export default function Home() {
       <div id="presidential">
         <LiveIndicator />
         <h1>Hanukkah List Presidential Election</h1>
-        <div className="subtext">The 2026 election continues to be hotly contested. Use the Meneedle<span className="trademark">®</span> to keep tabs on the vote, or use the map below to dig into results by region.</div>
+        <div className="subtext">Polls close December 11th! Use the Meneedle<span className="trademark">®</span> to keep tabs on the vote, or use the map to dig into results by region.</div>
 
         <VoteShareMenorah />
 

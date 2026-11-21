@@ -53,12 +53,12 @@ export const faqs = [
       ]
     }, {
       question: "Why \"Meneedle\"?",
-      answer: ["It's just menorah + needle. It was created in a lab to cause you <a href=\"https://www.elle.com/culture/career-politics/a24747167/new-york-times-election-needle-stress/\" target=\"_blank\">almost as much stress as its inspiration</a>."]
+      answer: ["Menorah + needle. It was created in a lab to cause you <a href=\"https://www.elle.com/culture/career-politics/a24747167/new-york-times-election-needle-stress/\" target=\"_blank\">almost as much stress as its inspiration</a>."]
     }, {
       question: "That's not how a menorah works! You don't even know Hanukkah!",
       answer: [`First of all, it's a <i>hanukkiah</i>.`,
-        `Second, it's called creative license. Little-known fact: once you hit 108 lifetime Hanukkah candles lit they give you a license to light it in whatever order you want 
-        (as long as you start with the <i>shamash</i>, obviously).`
+        `Little-known fact: once you hit 108 lifetime Hanukkah candles lit they give you a license to light them in whatever order you want 
+        (as long as you start with the <i>shamash</i>, of course).`
       ]
     }, {
       question: "How dare you put my state in [region]! It clearly belongs in [other region]!",
