@@ -135,7 +135,7 @@ function CandidateLabel({
         {name}
       </div>
 
-      <div className="mt-1 whitespace-nowrap text-xs text-gray-500">
+      <div className="mt-1 whitespace-nowrap text-xs text-gray-600">
         {total.toLocaleString()} votes
       </div>
     </div>
@@ -194,7 +194,7 @@ export default function VoteShareMenorah() {
         <CandidateLabel
           name={optionAName}
           total={optionATotal}
-          color={OPTION_A_COLOR}
+          color="var(--map-option-a-text)"
           align="left"
         />
       </div>

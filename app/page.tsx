@@ -23,8 +23,7 @@ export default function Home() {
 
       <div className="senatorials">
         <h2>Senate elections</h2>
-        <div className="subtext">Each major American geographic region has, by sheer coincidence, a crucial Hanukkah list Senate race this year.
-          Use the election trackers below to keep tabs on the races that matter to you, or tap the arrows to see what our expert political pundits have to say.
+        <div className="subtext">Use the election trackers below to keep tabs on the races that matter to you, or tap the arrows to see what our expert political pundits have to say.
         </div>
         <NortheastRace />
         <div className="subdivider" />

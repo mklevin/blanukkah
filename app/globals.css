@@ -6,7 +6,7 @@
     --subtitle-color: #363636;
     --divider-color: #dfdfdf;
     --subdivider-color: var(--title-color);
-    --subtext-color: #8b8b8b;
+    --subtext-color: #757575;
     --footer-color: #666666;
     --live-color: #d0021b;
     --link-color: #326891;
@@ -17,8 +17,9 @@
 
     /* Map colors */
     --map-option-a: #4e79a7;
+    --map-option-a-text: #4e79a7;
     --map-tie: #999999;
-    --map-tie-text: #666666;
+    --map-tie-text: #757575;
     --map-option-b: #f28e2b;
     --map-option-b-text: #d36a01;
 
@@ -66,7 +67,7 @@ header .title {
 }
 
 .main-content {
-    margin: 1.5em 6%;
+    margin: 1.25em 6%;
 }
 
 footer {

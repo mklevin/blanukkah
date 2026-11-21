@@ -21,7 +21,7 @@ const TOSSUP_MAX = 4 / 7;
 
 const OPTION_A_COLOR = "var(--map-option-a, #4e79a7)";
 const OPTION_B_COLOR = "var(--map-option-b-text, #d36a01)";
-const TIE_COLOR = "var(--map-tie, #666666)";
+const TIE_COLOR = "var(--map-tie-text, #666666)";
 
 const SEGMENTS = [
   { label: "VERY LIKELY", fill: "#d8e8f5", color: "#315b80" },
