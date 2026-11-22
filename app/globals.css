@@ -1,19 +1,33 @@
+
 @import 'tailwindcss';
 
 
+/* =========================================================
+   VARIABLES
+   ========================================================= */
+
 :root {
-    --title-color: #121212;
-    --subtitle-color: #363636;
-    --divider-color: #dfdfdf;
-    --subdivider-color: var(--title-color);
-    --subtext-color: #757575;
-    --footer-color: #666666;
-    --live-color: #d0021b;
+    /* Text */
+    --text-primary: #121212;
+    --text-secondary: #363636;
+    --text-muted: #757575;
+    --text-footer: #666666;
+
+    /* Borders */
+    --border-color: #dfdfdf;
+    --border-strong: var(--text-primary);
+
+    /* Accents */
+    --accent-live: #d0021b;
     --link-color: #326891;
 
-    --button-color: #567b95;
-    --button-hover-color: #326891;
-    --button-border-color: var(--button-hover-color);
+    /* Surfaces */
+    --surface-hover: #e9e8e8;
+
+    /* Buttons */
+    --button-bg: #567b95;
+    --button-bg-hover: var(--link-color);
+    --button-border: var(--button-bg-hover);
 
     /* Map colors */
     --map-option-a: #4e79a7;
@@ -21,14 +35,14 @@
     --map-tie: #999999;
     --map-tie-text: #757575;
     --map-option-b: #f28e2b;
-    --map-option-b-text: #B15E0B;
+    --map-option-b-text: #f28e2b;
 
     /* Map structure */
     --map-state-boundary: #ffffff;
     --map-active-outline: #222222;
     --map-highlight: rgb(255 255 255 / 18%);
 
-    /* Tooltip */
+    /* Map tooltip */
     --map-tooltip-background: #ffffff;
     --map-tooltip-color: #222222;
     --map-tooltip-muted: #777777;
@@ -36,74 +50,44 @@
     --map-tooltip-shadow: 0 3px 12px rgb(0 0 0 / 12%);
 }
 
-html, body {
+
+/* =========================================================
+   BASE
+   ========================================================= */
+
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
 main {
-    font-family: "Georgia";
+    font-family: Georgia, serif;
 }
 
-header {
-    border-bottom: 1px solid var(--divider-color);
-}
-
-header .title {
-    font-family: "Manufacturing Consent", serif;
-    font-size: 2.5em;
-    text-align: center;
-    letter-spacing: -0.03em;
-}
-
-.page-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.main-content {
-    flex: 1;
-}
-
-.main-content {
-    margin: 1.25em 6%;
-}
-
-footer {
-    margin: 2em 0 2em 0;
+p {
     font-family: "Libre Franklin";
-    font-size: 0.7em;
-    text-align: center;
-    color: var(--footer-color);
+    font-size: 0.95em;
+    letter-spacing: -0.03em;
+    color: var(--text-secondary);
 }
 
-footer a:hover {
-    text-decoration: underline;
-}
-
-div.sticky {
-    position: sticky;
-    top: 0;
-    z-index: 50;
+h1,
+h2 {
+    font-family: "librecheltenham", serif;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    color: var(--text-primary);
 }
 
 h1 {
-    font-family: "librecheltenham", serif;
     font-size: 2.5em;
-    letter-spacing: -0.005em;
     line-height: 1.2em;
-    font-weight: 600;
-    color: var(--title-color);
     margin-bottom: 0.2em;
 }
 
 h2 {
-    font-family: "librecheltenham", serif;
     font-size: 2em;
-    letter-spacing: -0.005em;
-    font-weight: 600;
-    color: var(--title-color);
 }
 
 h3 {
@@ -113,38 +97,61 @@ h3 {
     padding-top: 0.3em;
 }
 
-p {
+
+/* =========================================================
+   LAYOUT
+   ========================================================= */
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    margin: 1.25em 6%;
+}
+
+header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+header .title {
+    font-family: "Manufacturing Consent", serif;
+    font-size: 2.5em;
+    text-align: center;
+    letter-spacing: -0.03em;
+}
+
+footer {
+    margin: 2em 0;
     font-family: "Libre Franklin";
-    font-size: 0.95em;
-    letter-spacing: -0.03em;
-    color: var(--subtitle-color);
+    font-size: 0.7em;
+    text-align: center;
+    color: var(--text-footer);
 }
 
-.subtext {
-    font-family: "Georgia";
-    font-size: 1.25em;
-    letter-spacing: -0.03em;
-    color: var(--subtitle-color);
-    margin-bottom: 0.5em;
+footer a:hover {
+    text-decoration: underline;
 }
 
-.subtext .trademark {
-    font-size: 0.6em;
-    vertical-align: super;
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 50;
 }
 
-.navigation-sentinel {
-    height: 1px;
-    margin-bottom: -1px;
-    pointer-events: none;
-}
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
 
 .navigation {
     padding: 0.1em 1.2em 0.1em 6%;
-    border-bottom: 1px solid var(--divider-color);
+    border-bottom: 1px solid var(--border-color);
     align-items: center;
     height: 3.5em;
-
     background-color: white;
 }
 
@@ -163,7 +170,7 @@ p {
         margin: 0 1.25em;
         width: 1px;
         height: 1.3em;
-        background-color: var(--divider-color);
+        background-color: var(--border-color);
     }
 }
 
@@ -172,9 +179,8 @@ p {
     flex-direction: row;
     align-items: flex-start;
     width: 100%;
-
     font-family: "Libre Franklin";
-    color: var(--title-color);
+    color: var(--text-primary);
     font-size: 0.8em;
 
     @variant sm {
@@ -201,22 +207,20 @@ p {
     padding-top: 0.2em;
     height: 2em;
     cursor: pointer;
-
-    background-color: var(--button-color);
-    transition: all .2s ease-in;
+    background-color: var(--button-bg);
+    transition: background-color 0.2s ease-in;
     border-radius: 4px;
-    border: 1px solid var(--button-border-color);
+    border: 1px solid var(--button-border);
 }
 
 .navigation .vote-link:hover {
-    background-color: var(--button-hover-color);
+    background-color: var(--button-bg-hover);
 }
 
 .navigation .vote-link a {
     padding: 1em;
-
     font-size: 0.8em;
-    font-weight: 600; 
+    font-weight: 600;
     color: white;
     text-transform: uppercase;
     -webkit-tap-highlight-color: transparent;
@@ -230,16 +234,44 @@ p {
     background-color: transparent;
 }
 
+.navigation-sentinel {
+    height: 1px;
+    margin-bottom: -1px;
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   TEXT / SUBTEXT
+   ========================================================= */
+
+.subtext {
+    font-family: Georgia;
+    font-size: 1.15em;
+    letter-spacing: -0.03em;
+    color: var(--text-secondary);
+    margin-bottom: 0.5em;
+}
+
+.subtext .trademark {
+    font-size: 0.6em;
+    vertical-align: super;
+}
+
+
+/* =========================================================
+   LIVE INDICATORS
+   ========================================================= */
+
 .live-indicator {
     font-family: "Libre Franklin";
     padding-bottom: 0.3em;
 }
 
 .live-text {
-    background-color: var(--live-color);
+    background-color: var(--accent-live);
     border-radius: 3px;
     padding: 3px 6px;
-
     font-size: 0.7em;
     font-weight: 600;
     color: white;
@@ -247,18 +279,21 @@ p {
 
 .last-updated {
     margin-left: 0.5em;
-    vertical-align: center;
-
     font-size: 0.8em;
-    color: var(--live-color);
+    color: var(--accent-live);
 }
+
+
+/* =========================================================
+   RACES
+   ========================================================= */
 
 #presidential .map {
     padding: 1em;
 }
 
 .senatorials {
-    border-top: 1px solid var(--subdivider-color);
+    border-top: 1px solid var(--border-strong);
     padding-top: 0.8em;
 }
 
@@ -275,14 +310,13 @@ p {
     margin-bottom: 1em;
 }
 
-.individual-race .author {
+.individual-race .author,
+.individual-race .job {
     font-size: 0.8em;
-    line-height: 0.9em;
 }
 
 .individual-race .job {
-    font-size: 0.8em;
-    color: var(--subtext-color);
+    color: var(--text-muted);
 }
 
 .datawrapper-container {
@@ -294,7 +328,7 @@ p {
 }
 
 .subdivider {
-    border-top: 1px solid var(--divider-color);
+    border-top: 1px solid var(--border-color);
     padding-bottom: 1em;
 }
 
@@ -302,39 +336,49 @@ p {
     height: 1em;
 }
 
+
+/* =========================================================
+   MAP
+   ========================================================= */
+
 .map-legend {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  margin: 0.5rem auto 1rem;
-  font-family: "Libre Franklin", sans-serif;
-  font-size: 13px;
-  line-height: 1.4;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0.5rem auto 1rem;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
 }
 
 .map-legend__item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
 }
 
 .map-legend__swatch {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  border-radius: 2px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
 }
 
 .map-hit-area path {
-  cursor: pointer;
-  outline: none;
+    cursor: pointer;
+    outline: none;
 }
 
 .map-hit-area path:focus {
-  outline: none;
+    outline: none;
 }
+
+
+/* =========================================================
+   UPDATES
+   ========================================================= */
 
 .update-message a {
     color: var(--link-color);
@@ -346,115 +390,123 @@ p {
 }
 
 .latest-updates-button {
-  @apply flex h-8.5 w-8.5 cursor-pointer items-center justify-center
-    rounded-full border border-gray-400 bg-transparent
-    transition-colors enabled:hover:bg-gray-200
-    disabled:cursor-default;
+    @apply flex h-8.5 w-8.5 cursor-pointer items-center justify-center
+        rounded-full border border-gray-400 bg-transparent
+        transition-colors enabled:hover:bg-gray-200
+        disabled:cursor-default;
 }
 
+
+/* =========================================================
+   LOADING
+   ========================================================= */
+
 .page-loading {
-  height: 100vh;
-  height: 100dvh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 100vh;
+    height: 100dvh;
+    width: 100%;
+    text-align: center;
+}
+
+.page-loading p,
+.page-loading .subtext {
+    font-family: "librecheltenham", serif;
+    letter-spacing: -0.005em;
+    color: var(--text-primary);
 }
 
 .page-loading p {
-  margin: 0;
-  
-  font-family: "librecheltenham", serif;
-  font-size: 1.5em;
-  letter-spacing: -0.005em;
-  color: var(--title-color);
+    margin: 0;
+    font-size: 1.5em;
 }
 
 .page-loading .subtext {
-  margin-top: -0.7em;
-  
-  font-family: "librecheltenham", erif;
-  font-size: 1.1em;
-  letter-spacing: -0.005em;
-  color: var(--title-color);
+    margin-top: -0.7em;
+    font-size: 1.1em;
 }
 
 .page-loading__spinner {
-  width: 40px;
-  height: 40px;
-  border: 4px solid #ddd;
-  border-top-color: var(--title-color);
-  border-radius: 50%;
-  animation: page-loading-spin 0.8s linear infinite;
+    width: 40px;
+    height: 40px;
+    border: 4px solid #ddd;
+    border-top-color: var(--text-primary);
+    border-radius: 50%;
+    animation: page-loading-spin 0.8s linear infinite;
 }
 
 @keyframes page-loading-spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .page-loading__spinner {
-    animation: none;
-  }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .page-loading__retry {
-  font-family: "librecheltenham", serif;
-  font-size: 1.2em;
-  color: var(--link-color) !important;
+    font-family: "librecheltenham", serif;
+    font-size: 1.2em;
+    color: var(--link-color) !important;
 
-  @apply cursor-pointer border-0 bg-transparent p-0
-    text-inherit hover:underline hover:underline-offset-4;
+    @apply cursor-pointer border-0 bg-transparent p-0
+        text-inherit hover:underline hover:underline-offset-4;
 }
 
-.candidates h3 {
-    font-size: 1em;
+
+/* =========================================================
+   CANDIDATES
+   ========================================================= */
+
+.candidates .subtext {
+    font-size: 1.2em;
 }
 
 .candidates .blurb {
     margin-bottom: 2em;
 }
 
-.candidates p {
-    font-size: 1.1em;
-    margin-bottom: 1em;
-}
-
 .candidates .divider {
-    border-top: 1px solid var(--title-color);
+    border-top: 1px solid var(--border-strong);
     padding-bottom: 1em;
 }
 
 .election-candidates {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1.5em;
+    gap: 0.2em;
     max-width: 800px;
-    margin: 1em auto 1.5em;
+    margin: 1em auto 1em;
 }
 
 .candidate {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     justify-content: flex-start;
     min-width: 0;
     min-height: clamp(220px, 35vw, 400px);
+    text-align: center;
+}
+
+.candidate-link {
+    width: 100%;
+    height: 100%;
+    padding: 1em 1em 0.2em 1em;
+}
+
+.candidate-link:hover {
+    background-color: var(--surface-hover);
+    border-radius: 16px;
 }
 
 .candidate-image {
     display: block;
     width: 100%;
-    max-width: 250px;
     max-height: 350px;
     object-fit: contain;
-    margin: auto 0; 
+    margin: auto 0;
 }
 
 .candidate-name {
@@ -464,6 +516,28 @@ p {
     font-weight: 400;
     text-align: center;
 }
+
+.candidates p {
+    font-family: "librecheltenham", serif;
+    font-size: 1.175em;
+    margin-bottom: 1em;
+}
+
+.candidates p a,
+.faq p a {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+.candidates p a:hover,
+.faq p a:hover {
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   FAQ
+   ========================================================= */
 
 .faq {
     margin: 1.5em 0;
@@ -489,19 +563,18 @@ p {
     letter-spacing: -0.005em;
     line-height: 1.25em;
     font-weight: 600;
-    color: var(--title-color);
+    color: var(--text-primary);
 }
 
 .faq__chevron {
     flex-shrink: 0;
-    color: var(--subtext-color);
+    color: var(--text-muted);
     transition: transform 0.2s ease;
 }
 
 .faq__chevron--open {
     transform: rotate(180deg);
 }
-
 
 .faq__answer {
     display: grid;
@@ -530,102 +603,93 @@ p {
     letter-spacing: -0.005em;
 }
 
-.faq__answer p a {
-    text-decoration: underline;
-    color: var(--link-color);
-}
-
-.faq__answer p a:hover {
-    text-decoration: none;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .faq__answer,
-    .faq__chevron {
-        transition: none;
-    }
-}
-
 .faq__question:focus-visible {
     outline: 2px solid var(--link-color);
     outline-offset: 4px;
     border-radius: 2px;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .faq__chevron {
-        transition: none;
-    }
-}
 
-.faq p a {
-    text-decoration: underline;
-    color: var(--link-color);
-}
-
-.faq p a:hover {
-    text-decoration: none;
-}
+/* =========================================================
+   CREDITS
+   ========================================================= */
 
 .credits-author-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 28px 32px;
-  margin: 48px auto 0;
-  max-width: 976px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px 32px;
+    margin: 48px auto 0;
+    max-width: 976px;
 }
 
 .credits-author {
-  display: flex;
-  flex: 0 1 220px;
-  flex-direction: column;
-  align-items: center;
-  min-width: 0;
-  text-align: center;
+    display: flex;
+    flex: 0 1 220px;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    text-align: center;
 }
 
 .credits-author-image {
-  display: block;
-  width: 170px;
-  height: 170px;
-  min-width: 170px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center;
+    display: block;
+    width: 170px;
+    height: 170px;
+    min-width: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .credits-author-info {
-  margin-top: 12px;
+    margin-top: 12px;
 }
 
 .credits-author-name {
-  margin: 0;
-
-  font-family: "librecheltenham", serif;
-  letter-spacing: -0.005em;
-  font-weight: 600;
-  color: var(--title-color);
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 1.3em;
+    margin: 0;
+    font-family: "librecheltenham", serif;
+    letter-spacing: -0.005em;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.3em;
+    color: var(--text-primary);
 }
 
 .credits-author-title {
-  font-size: 14px;
-  color: var(--subtext-color);
+    font-size: 14px;
+    color: var(--text-muted);
 }
 
 .credits-author-credit {
-  margin-top: 2px;
-  font-size: 15px;
+    margin-top: 2px;
+    font-size: 15px;
 }
 
 .credits .subtext {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
+
+
+/* =========================================================
+   MISC
+   ========================================================= */
 
 .vote {
     height: auto;
     min-height: 200em;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .page-loading__spinner,
+    .faq__answer,
+    .faq__chevron {
+        animation: none;
+        transition: none;
+    }
 }

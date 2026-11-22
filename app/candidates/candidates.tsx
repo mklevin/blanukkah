@@ -1,29 +1,47 @@
+import Link from "next/link";
+
 export type Candidate = {
     name: string,
     image: string,
-    description: string
+    link?: string
 }
 
 export type CandidateProps = {
     candidates: Candidate[];
 }
 
-export default function Candidates({candidates}: CandidateProps) {
+export default function Candidates({ candidates }: CandidateProps) {
     return (
       <div className="election-candidates">
         {candidates.map((candidate) => (
           <div className="candidate" key={candidate.name}>
-            <img
-              className="candidate-image"
-              src={candidate.image}
-              alt={candidate.name}
-            />
+            {candidate.link ? (
+              <a href={candidate.link} className="candidate-link" target="_blank">
+                <img
+                  className="candidate-image"
+                  src={candidate.image}
+                  alt={candidate.name}
+                />
 
-            <span className="candidate-name" dangerouslySetInnerHTML={{ __html: candidate.name }}/>
-            {candidate.description !== "" 
-              ? <p dangerouslySetInnerHTML={{__html: candidate.description}} /> 
-              : ""
-            }
+                <div
+                  className="candidate-name"
+                  dangerouslySetInnerHTML={{ __html: candidate.name }}
+                />
+              </a>
+            ) : (
+              <>
+                <img
+                  className="candidate-image"
+                  src={candidate.image}
+                  alt={candidate.name}
+                />
+
+                <span
+                  className="candidate-name"
+                  dangerouslySetInnerHTML={{ __html: candidate.name }}
+                />
+              </>
+            )}
           </div>
         ))}
       </div>
