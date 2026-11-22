@@ -16,7 +16,12 @@ export default function Candidates({ candidates }: CandidateProps) {
         {candidates.map((candidate) => (
           <div className="candidate" key={candidate.name}>
             {candidate.link ? (
-              <a href={candidate.link} className="candidate-link" target="_blank">
+              <a
+                href={candidate.link}
+                className="candidate-link"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   className="candidate-image"
                   src={candidate.image}
