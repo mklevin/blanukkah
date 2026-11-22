@@ -148,6 +148,7 @@ footer a:hover {
    ========================================================= */
 
 .navigation {
+    position: sticky;
     padding: 0.1em 1.2em 0.1em 6%;
     border-bottom: 1px solid var(--border-color);
     align-items: center;
@@ -175,6 +176,7 @@ footer a:hover {
 }
 
 .navigation .nav-items {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -202,15 +204,25 @@ footer a:hover {
 }
 
 .navigation .vote-link {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
     margin-left: auto;
     margin-right: 1%;
-    padding-top: 0.2em;
-    height: 2em;
+    padding-top: 0.1em;
+
+    height: 2.4em;
     cursor: pointer;
     background-color: var(--button-bg);
     transition: background-color 0.2s ease-in;
     border-radius: 4px;
     border: 1px solid var(--button-border);
+
+    /* Shine effect containment */
+    overflow: hidden;
+    isolation: isolate;
 }
 
 .navigation .vote-link:hover {
@@ -218,26 +230,60 @@ footer a:hover {
 }
 
 .navigation .vote-link a {
-    padding: 1em;
-    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 1em;
+
+    font-size: 0.9em;
     font-weight: 600;
     color: white;
     text-transform: uppercase;
     -webkit-tap-highlight-color: transparent;
-
-    @variant sm {
-        padding: 1.2em;
-    }
+    text-decoration: none;
 }
 
 .navigation .vote-link a:active {
     background-color: transparent;
 }
 
-.navigation-sentinel {
-    height: 1px;
-    margin-bottom: -1px;
+/* Shiny sweep */
+.navigation .vote-link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+        110deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0.15) 30%,
+        rgba(255, 255, 255, 0.7) 50%,
+        rgba(255, 255, 255, 0.15) 70%,
+        transparent 100%
+    );
+    transform: translateX(-250%) skewX(-20deg);
+    animation: vote-shine 8s ease-in-out infinite;
     pointer-events: none;
+    z-index: 2;
+}
+
+@keyframes vote-shine {
+    0%, 80% {
+        transform: translateX(-250%) skewX(-20deg);
+    }
+
+    100% {
+        transform: translateX(250%) skewX(-20deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .navigation .vote-link::after {
+        animation: none;
+    }
 }
 
 
@@ -680,7 +726,7 @@ footer a:hover {
 
 
 /* =========================================================
-   MISC
+   VOTE FORM
    ========================================================= */
 
 .vote {

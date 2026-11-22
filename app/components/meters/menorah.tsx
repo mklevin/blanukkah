@@ -328,9 +328,9 @@ export default function VoteShareMenorah() {
 
     {/* Labels */}
             <div className="mt-1 flex items-center justify-between text-xs font-semibold">
-              <span style={{ color: OPTION_A_COLOR }}>Very Likely</span>
-              <span style={{ color: "var(--map-tie-text" }}>Toss Up</span>
-              <span style={{ color: OPTION_B_COLOR }}>Very Likely</span>
+              <span style={{ color: OPTION_A_COLOR }}>Very likely</span>
+              <span style={{ color: "var(--map-tie-text" }}>Toss-up</span>
+              <span style={{ color: OPTION_B_COLOR }}>Very likely</span>
             </div>
           </div>
         </div>

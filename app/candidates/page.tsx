@@ -103,7 +103,7 @@ export default function Page() {
       <h3>Blichigas (Midwest)</h3>
       <Candidates candidates={midwest} />
       <div className="blurb">
-        <p>In Blichigas, the name of the game is practicality. <b>Collapsible cup</b> is running on a pragmatic environmental platform based on eliminating single-use coffee shop cups, while <b>compression socks</b> have endorsements from both the region's medical establishment and the ALPA (Air Line Pilots Association). Which will win: nature, or nurture?</p>
+        <p>In Blichigas, the name of the game is practicality. <b>Collapsible cup</b> is running on a pragmatic environmental platform focused on eliminating single-use coffee shop cups, while <b>compression socks</b> have endorsements from both the region's medical establishment and the ALPA (Air Line Pilots Association). Which will win: nature, or nurture?</p>
       </div>
 
       <div className="subdivider" />
@@ -111,7 +111,7 @@ export default function Page() {
       <h3>Blexassippi (South)</h3>
       <Candidates candidates={south} />
       <div className="blurb">
-        <p>Blexassippi's Senate nominees make it obvious that voters have their eye on the future. <b>Children of Ruin</b> inherits the introspective evolutionary sci-fi trappings (and sentient spiders) of its predecessor, arguing that incremental progress today can cumulatively deliver a better tomorrow. Conversely, <b>Slow Gods</b> takes a longer view, promising a prosporous future can only be built on careful planning now. The question is: how patient are voters feeling?</p>
+        <p>Blexassippi's nominees may both be shooting for the stars, but they couldn't be more different. <b>Children of Ruin</b> inherits the incrementalist evolutionary sci-fi trappings (and sentient spiders) of its predecessor, while <b>Slow Gods</b> takes a longer view, promising good things to those who wait. The question is: how patient are voters feeling?</p>
       </div>
 
       <div className="subdivider" />
@@ -119,7 +119,7 @@ export default function Page() {
       <h3>Blacific (West)</h3>
       <Candidates candidates={west} />
       <div className="blurb">
-        <p>The only digital contenders up for election this year, both of the Blacific's candidates promise a generational experience. The key question for voters, however, is <i>which</i> generation: <b>The Legend of Zelda: Ocarina of Time</b> wants to deliver us the best of the 90s, while <b>Donkey Kong: Bananza</b> stays firmly grounded in the present. Are voters feeling nostalgic for a simpler time, or is the future now?</p>
+        <p>The only digital contenders up for election this year, both of the Blacific's candidates promise a generational experience. The key question for voters, however, is <i>which</i> generation: <b>The Legend of Zelda: Ocarina of Time</b> wants to return us to the 90s, while <b>Donkey Kong: Bananza</b> stays firmly grounded in the present. Are voters feeling nostalgic for a simpler time, or is the future now?</p>
       </div>
     </div>
   );

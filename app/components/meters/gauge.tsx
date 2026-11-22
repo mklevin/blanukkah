@@ -114,7 +114,7 @@ export default function VoteShareGauge({
 
   const resultCaption = caption ?? (
     isTossup
-      ? "It's a tossup"
+      ? "It's a toss-up"
       : isOptionALeading
         ? `${optionAName} leads`
         : `${optionBName} leads`
