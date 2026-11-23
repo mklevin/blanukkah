@@ -4,16 +4,16 @@ import { useEffect, useRef, useState } from "react";
 
 const PAGE_HEIGHTS = {
   mobile: [
-    3400, // intro
-    1260, // senate election
+    3550, // intro
+    1300, // senate election
     1130, // demographics
     600,  // confirmation
   ],
   desktop: [
-    2950, // intro
-    870,  // senate election
-    950,  // demographics
-    500,  // confirmation
+    3050, // intro
+    920,  // senate election
+    900,  // demographics
+    550,  // confirmation
   ],
 };
 
