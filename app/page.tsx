@@ -8,7 +8,7 @@ import WestRace from "@/app/components/races/west/west";
 
 export default function Home() {
   return (
-    <>
+    <div className="results">
       <div id="presidential">
         <LiveIndicator />
         <h1>Hanukkah List Presidential Election</h1>
@@ -36,6 +36,6 @@ export default function Home() {
         <div className="subdivider" />
         <WestRace />
       </div>
-    </>
+    </div>
   );
 }

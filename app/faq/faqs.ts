@@ -62,7 +62,7 @@ export const faqs = [
         + "quickly, but much like everything about this, it's all vibes."
       ]
     }, {
-      question: "Why \"Meneedle\"?",
+      question: "Why \"Meneedle<span class=\"trademark\">®</span>\"?",
       answer: ["Menorah + needle. It was created in a lab to cause you <a href=\"https://www.elle.com/culture/career-politics/a24747167/new-york-times-election-needle-stress/\" target=\"_blank\">almost as much stress as its inspiration</a>."]
     }, {
       question: "That's not how a menorah works! You don't even know Hanukkah!",
