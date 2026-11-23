@@ -7,12 +7,14 @@ export default function Page() {
 
       <div className="subtext">
         This level of shenaniganry would have been completely impossible
-        to pull off alone. A huge shoutout to <b>Linda Liu</b> and
-        <b> Patty Santa Cruz</b> for their incredible sticker designs,
-        to <b>The New York Times</b> for their eminently imitatable
-        election website, and to each and every one of our furry pundits
-        and their owners!
+        to pull off alone. A huge shoutout to everyone who helped!:
       </div>
+      <ul>
+        <li><b>Sticker designs:</b> Linda Liu, Patty Santa Cruz</li>
+        <li><b>QA testing:</b> Channing Kimble-Brown, Charlotte Wright, Tiana Schippa</li>
+        <li><b>Web design inspiration:</b> The New York Times</li>
+        <li><b>Policital commentary:</b> all of the furry friends below!</li>
+      </ul>
 
       <div className="credits-author-grid">
         {AllAuthors.map((author) => (
