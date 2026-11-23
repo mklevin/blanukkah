@@ -140,10 +140,14 @@ header .title a {
 
 footer {
     margin: 2em 0;
+    text-align: center;
+}
+
+footer a {
     font-family: "Libre Franklin";
     font-size: 0.7em;
-    text-align: center;
     color: var(--text-footer);
+    text-decoration: none;
 }
 
 footer a:hover {
