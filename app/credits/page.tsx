@@ -10,10 +10,10 @@ export default function Page() {
         to pull off alone. A huge shoutout to everyone who helped!:
       </div>
       <ul>
-        <li><b>Sticker design:</b> ???</li>
         <li><b>QA testing:</b> Channing Kimble-Brown, Charlotte Wright, Tiana Schippa</li>
         <li><b>Web design inspiration:</b> The New York Times</li>
-        <li><b>Policital commentary:</b> all of the furry friends below!</li>
+        <li><b>Sticker design:</b> To be revealed...</li>
+        <li><b>Policital commentary:</b> All of the furry friends below!</li>
       </ul>
 
       <div className="credits-author-grid">
