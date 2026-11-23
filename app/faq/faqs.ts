@@ -63,5 +63,15 @@ export const faqs = [
       question: "How dare you put my state in [region]! It clearly belongs in [other region]!",
       answer: [`The regions on this site are actually the <a href="https://en.wikipedia.org/wiki/List_of_regions_of_the_United_States" target="_blank">official national census-designated regions</a>.
         If you disagree with them, reach out to your local U.S. Census Bureau office to lodge a complaint.`,]
+    }, {
+      question: "Did you build this with AI?",
+      answer: [`If your question is "did you build any part of this website with AI?", I did 
+        (at the recommendation of the folks I know who've been doing this stuff professionally for years) 
+        use an LLM to help me build the visualizations, and for some of the nitty-gritty web dev things.`,
+        `If your question is "did you use AI for any creative portion of this website?", the answer 
+        is absolutely not. Do you think AI could have come up with an idea this stupid? Every silly 
+        design choice, a majority of the poorly-written TypeScript, and 100% of the ham-fisted jokes 
+        on this website are (unfortunately) all me.`
+      ]
     }
 ];

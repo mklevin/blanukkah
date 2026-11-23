@@ -7,7 +7,7 @@ import { ElectionDataProvider } from "@/app/components/data/election-data-provid
 
 export const metadata: Metadata = {
   title: 'Matt\'s Hanukkah List 2026 Election',
-  description: 'The most important election of the year.',
+  description: 'Vote in the second-most important election of the year!',
 };
 
 const franklin = Libre_Franklin({
