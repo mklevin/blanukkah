@@ -43,6 +43,9 @@ export const faqs = [
       question: "It looks like I can vote multiple times. Is that on purpose?",
       answer: [`Yep! If you want to stuff the ballot, be my guest. I'm an FAQ page, not a cop.`]
     }, {
+      question: "Can I share this with my friends?",
+      answer: [`Please do! We will not sleep until we've reached 100% of the electorate (or Dec 11th passes, whichever comes first.)`]
+    }, {
       question: "How long did this take to make?",
       answer: ["Don't worry about it! (Like two weeks. It really wasn't that bad.)"]
     }, {
