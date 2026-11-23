@@ -192,7 +192,6 @@ footer a:hover {
 
 .navigation .nav-items a {
     padding-right: 1em;
-    padding-top: 0.3em;
 
     @variant sm {
         padding-right: 1.5em;
