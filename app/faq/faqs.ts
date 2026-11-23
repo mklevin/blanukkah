@@ -33,20 +33,6 @@ export const faqs = [
         `Okay, yes, <i>and</i> voting on which sweater I should ask my mom for. It can be two things!`
       ]
     }, {
-      question: "How long did this take to make?",
-      answer: ["Don't worry about it! (Like two weeks. It really wasn't that bad.)"]
-    }, {
-      question: "Did you build this with AI?",
-      answer: [
-         `If your question is "did you use AI for any creative parts of building this website?", the answer 
-        is absolutely not. Do you think AI could have come up with an idea this stupid? Every silly 
-        design choice, a majority of the poorly-written TypeScript, and 100% of the ham-fisted jokes 
-        on this website are (unfortunately) all me.`,
-        `If your question is "did you build any part of this website with AI?", I did 
-        (at the recommendation of the folks I know who've been doing this stuff professionally for years) 
-        use an LLM to help me build the visualizations, and for some of the nitty-gritty web dev things.`,
-      ]
-    }, {
       question: "Is any of the data I submit in my ballot public?",
       answer: ["Nope! All of the data powering this site is aggregated. Individual ballots are only accessible by me."]
     }, {
@@ -56,6 +42,19 @@ export const faqs = [
     }, {
       question: "It looks like I can vote multiple times. Is that on purpose?",
       answer: [`Yep! If you want to stuff the ballot, be my guest. I'm an FAQ page, not a cop.`]
+    }, {
+      question: "How long did this take to make?",
+      answer: ["Don't worry about it! (Like two weeks. It really wasn't that bad.)"]
+    }, {
+      question: "Did you build this with AI?",
+      answer: [
+         `If your question is "did you use AI for any creative parts of building this website?", the answer 
+        is absolutely not. Do you think AI could have come up with an idea this stupid? Every silly 
+        design choice, a majority of the poorly-written TypeScript, and 100% of the ham-fisted jokes 
+        on this website are (unfortunately) all me.`,
+        `I did (at the recommendation of the folks I know who do this stuff professionally) 
+        use an LLM to help me build the visualizations, and for some of the nitty-gritty web dev things.`,
+      ]
     }, {
       question: "How long will it take me to get my \"I Voted!\" stickers?",
       answer: ["No clue! It could be next week, it could be next year. I'll do my best to get them to you "
