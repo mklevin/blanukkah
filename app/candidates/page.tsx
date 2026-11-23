@@ -72,7 +72,7 @@ export default function Page() {
     <div className="candidates">
       <h1>The Candidates</h1>
 
-      <h2>Presidential election</h2>
+      <h2 id="presidential">Presidential election</h2>
       <div className="subtext">The entire country votes for a single President of the Hanukkah List, honoring a tradition going all the way back to George Washington's rabbi.</div>
       <Candidates candidates={presidential} />
       <div className="blurb">
@@ -86,10 +86,10 @@ export default function Page() {
 
       <div className="divider" />
 
-      <h2>Senate elections</h2>
+      <h2 id="senate">Senate elections</h2>
       <div className="subtext">Each major geographic region in the country elects their own Hanukakh List senator, honoring a tradition going all the way back to this Hanukkah list.</div>
 
-      <h3>Blue York (Northeast)</h3>
+      <h3 id="blueyork">Blue York (Northeast)</h3>
       <Candidates candidates={northeast} />
       <div className="blurb">
         <p>
@@ -100,7 +100,7 @@ export default function Page() {
 
       <div className="subdivider" />
 
-      <h3>Blichigas (Midwest)</h3>
+      <h3 id="blichigas">Blichigas (Midwest)</h3>
       <Candidates candidates={midwest} />
       <div className="blurb">
         <p>In Blichigas, the name of the game is practicality. <b>Collapsible cup</b> is running on a pragmatic environmental platform focused on eliminating single-use coffee shop cups, while <b>compression socks</b> have endorsements from both the region's medical establishment and the ALPA (Air Line Pilots Association). Which will win: nature, or nurture?</p>
@@ -108,7 +108,7 @@ export default function Page() {
 
       <div className="subdivider" />
 
-      <h3>Blexassippi (South)</h3>
+      <h3 id="blexassippi">Blexassippi (South)</h3>
       <Candidates candidates={south} />
       <div className="blurb">
         <p>Blexassippi's nominees may both be shooting for the stars, but they couldn't be more different. <b>Children of Ruin</b> inherits the incrementalist evolutionary sci-fi trappings (and sentient spiders) of its predecessor, while <b>Slow Gods</b> takes a longer view, promising good things to those who wait. The question is: how patient are voters feeling?</p>
@@ -116,7 +116,7 @@ export default function Page() {
 
       <div className="subdivider" />
 
-      <h3>Blacific (West)</h3>
+      <h3 id="blacific">Blacific (West)</h3>
       <Candidates candidates={west} />
       <div className="blurb">
         <p>The only digital contenders up for election this year, both of the Blacific's candidates promise a generational experience. The key question for voters, however, is <i>which</i> generation: <b>The Legend of Zelda: Ocarina of Time</b> wants to return us to the 90s, while <b>Donkey Kong: Bananza</b> stays firmly grounded in the present. Are voters feeling nostalgic for a simpler time, or is the future now?</p>
