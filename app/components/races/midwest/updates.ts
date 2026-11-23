@@ -1,4 +1,4 @@
-import { Brie, Daisy, Molly } from "../../data/authors";
+import { Daisy, Molly, Thor } from "../../data/authors";
 
 export const updates = [
   {
@@ -12,6 +12,6 @@ export const updates = [
   }, {
     text: `The cup's got my vote - we've had many a debate while tornado-spotting from my porch and
     its arguments have always held water.`,
-    author: Brie
+    author: Thor
   }
 ];

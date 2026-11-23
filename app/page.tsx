@@ -5,6 +5,7 @@ import NortheastRace from "@/app/components/races/northeast/northeast";
 import MidwestRace from "@/app/components/races/midwest/midwest";
 import SouthRace from "@/app/components/races/south/south";
 import WestRace from "@/app/components/races/west/west";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -26,7 +27,8 @@ export default function Home() {
 
       <div className="senatorials">
         <h2>Senate elections</h2>
-        <div className="subtext">Use the election trackers below to keep tabs on the races that matter to you, or tap the arrows to see what our expert political pundits have to say.
+        <div className="subtext">
+          Use the election trackers below to keep tabs on the races that matter to you, or tap the arrows to see what our expert political pundits have to say. Check out our <Link href="/candidates/">voter guide</Link> for more about each race.
         </div>
         <NortheastRace />
         <div className="subdivider" />

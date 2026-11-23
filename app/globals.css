@@ -97,6 +97,15 @@ h3 {
     padding-top: 0.3em;
 }
 
+a {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 
 /* =========================================================
    LAYOUT
@@ -122,6 +131,11 @@ header .title {
     font-size: 2.5em;
     text-align: center;
     letter-spacing: -0.03em;
+}
+
+header .title a {
+    color: var(--text-primary);
+    text-decoration: none;
 }
 
 footer {
@@ -191,6 +205,8 @@ footer a:hover {
 }
 
 .navigation .nav-items a {
+    color: var(--text-primary);
+    text-decoration: none;
     padding-right: 1em;
 
     @variant sm {
@@ -433,15 +449,6 @@ h2 .trademark {
    UPDATES
    ========================================================= */
 
-.update-message a {
-    color: var(--link-color);
-    text-decoration: underline;
-}
-
-.update-message a:hover {
-    text-decoration: none;
-}
-
 .latest-updates-button {
     @apply flex h-8.5 w-8.5 cursor-pointer items-center justify-center
         rounded-full border border-gray-400 bg-transparent
@@ -583,18 +590,6 @@ h2 .trademark {
     font-size: 1.175em;
     margin-bottom: 1em;
 }
-
-.candidates p a,
-.faq p a {
-    color: var(--link-color);
-    text-decoration: underline;
-}
-
-.candidates p a:hover,
-.faq p a:hover {
-    text-decoration: none;
-}
-
 
 /* =========================================================
    FAQ

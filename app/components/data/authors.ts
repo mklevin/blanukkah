@@ -71,7 +71,7 @@ export const Pasta: Author = {
 
 export const Thor: Author = {
   name: "Thor",
-  jobTitle: "Staff Food Supplier",
+  jobTitle: "Principal Food Acquisition Officer",
   image: publicPath("/images/authors/thor.jpg"),
   credit: "Brian Wingo"
 }
