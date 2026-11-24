@@ -13,6 +13,13 @@ export const Brie: Author = {
   credit: "Charlotte Wright"
 }
 
+export const Calvin: Author = {
+  name: "Calvin Turner",
+  jobTitle: "Fly Catcher",
+  image: publicPath("/images/authors/calvin.jpg"),
+  credit: "Christine Turner"
+}
+
 export const Circe: Author = {
   name: "Circe the Witchy Girl",
   jobTitle: "Chief Food Officer",
@@ -41,11 +48,25 @@ export const Fabio: Author = {
   credit: "Emily Crossette"
 }
 
+export const HarGow: Author = {
+  name: "Har Gow",
+  jobTitle: "Volunteer Private Investigator",
+  image: publicPath("/images/authors/hargow.jpg"),
+  credit: "Amanda Flink"
+}
+
 export const KitKat: Author = {
   name: "KitKat",
   jobTitle: "Pretty Privilege Exemplar",
   image: publicPath("/images/authors/kitkat.jpg"),
   credit: "Andrew Truong"
+}
+
+export const Madison: Author = {
+  name: "Madison",
+  jobTitle: "Content Strategist",
+  image: publicPath("/images/authors/madison.jpg"),
+  credit: "Brooks"
 }
 
 export const Molly: Author = {
@@ -67,6 +88,13 @@ export const Pasta: Author = {
   jobTitle: "Perpetually Baffled Glutton",
   image: publicPath("/images/authors/pasta.jpg"),
   credit: "Snow"
+}
+
+export const SiuMai: Author = {
+  name: "Siu Mai",
+  jobTitle: "Private Military Contractor",
+  image: publicPath("/images/authors/siumai.jpg"),
+  credit: "Amanda Flink"
 }
 
 export const Thor: Author = {
@@ -91,5 +119,21 @@ export const Zoro: Author = {
 }
 
 export const AllAuthors = 
-  [Brie, Circe, Colby, Daisy, Fabio, KitKat, Molly, Nera, Pasta, Thor, Zoidberg, Zoro]
+  [
+    Brie, 
+    Calvin,
+    Circe, 
+    Colby, 
+    Daisy, 
+    Fabio, 
+    HarGow, 
+    KitKat, 
+    Madison,
+    Molly, 
+    Nera, 
+    Pasta, 
+    SiuMai, 
+    Thor, 
+    Zoidberg, 
+    Zoro]
   .sort((a, b) => a.name.localeCompare(b.name));
